@@ -21,6 +21,10 @@ ILogger
 Module.ILogger
 ```
 
+## public, private宣言
+
+かならず付ける
+
 ### プロパティ宣言
 
 コンストラクタの引数でプロパティを宣言できるが、明確な使い分けは不明
@@ -95,5 +99,21 @@ void以外のときは明示する
 ```
 public stringFunction(): string {
     return "aaaa";
+}
+```
+
+## キャスト
+
+そのままメソッドチェインとかするときには `()`　つける
+
+```
+(any>hoge).fuga()
+```
+
+## 関数
+
+```
+var hoge = (fuga: Fuga) => {
+  // hoge
 }
 ```
